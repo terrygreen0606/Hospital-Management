@@ -1,0 +1,216 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+// Variables
+// @import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+
+// ==========================================================================================
+// OVERRIDES
+// ==========================================================================================
+h1, h2, h3, h4, h5, h6, span, p, small, a, button, div, table, tbody, th, tr, td, ul, li {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif !important;
+	background: white !important;
+}
+
+.scroll-top {
+	bottom: 60px !important;
+	right: 8px !important;
+}
+
+.main-menu.menu-light .navigation > li.nav-item.open.has-sub.open {
+	// background-color: #eceff1 !important;
+	background-color: #F2F4F4 !important;
+}
+
+.bg-transparent {
+	background-color: transparent !important;
+}
+
+.header-navbar.fixed-top, .main-menu.menu-light, .main-menu.menu-light .navigation, .footer-custom-wrapper {
+	background: unset !important;
+	background-color: #f8f8f8 !important;
+}
+
+.nav-item.has-sub.open, .nav-item.has-sub {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	border-right: 0px !important;
+	border-left: 0px !important;
+	border-radius: 0px !important;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:not(.mm-next):after {
+	right: 15px !important;
+}
+
+.swal-footer {
+	padding: 13px 25px !important;
+}
+
+
+.dropbox {
+    outline: unset !important; /* the dash box */
+    outline-offset: 0px;
+    border: 2px dashed grey !important;
+    background: unset !important;
+    color: dimgray;
+    padding-top: 23px !important;
+    // padding: 20px 10px !important;
+    min-height: 200px; /* minimum height */
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease !important;
+}
+
+.dropbox:hover {
+	background: #f8f8f8 !important;
+}
+
+@media all and (max-width: 425px) {
+	.nav-tabs li {
+		display: block !important;
+		width: 100% !important;
+		margin: 0px !important;	
+	}
+}	
+// ==========================================================================================
+
+
+.page-title-icon {
+	font-size: inherit !important; 
+	float: left; margin-top: 0.2rem; 
+	margin-right: 5px;
+}
+
+.mx-sample {
+	color: blue;
+}
+
+.mx {
+	&.dashboard {
+		h2 {
+			color: #5A8DEE;
+			font-weight: 600;
+			font-size: 20px;
+		}
+		.dashboard-counter-block {
+			width: 100%;
+			height: 75px;
+			border-radius: 4.27px;
+			color: #FFFFFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0px 22px;
+
+			&.counter-doctors {
+				background-color: #5A8DEE;
+			}
+
+			&.counter-pharmacies {
+				background-color: #2DA6A2;
+			}
+
+			&.counter-patients {
+				background-color: #707171;
+			}
+
+			h3 {
+				color: white;
+				font-weight: bold;
+				font-size: 40px;
+				margin-right: auto;
+			}
+
+			div {
+				font-size: 20px;
+				font-style: italic;
+				margin-left: auto;
+			}
+		}
+
+		.adherance-block {
+			width: 100%;
+			height: 150px;
+			border-radius: 4.27px;
+			color: #FFFFFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 22px;
+			background-color: #81BEF1;
+			text-align: center;
+
+			div h3 {
+				color: white;
+				font-weight: bold;
+				font-size: 40px;
+			}
+		}
+
+		.stat-table {
+			overflow-y: scroll;
+			border: 2px solid #DFE3E7;
+			box-shadow: 0px 2px 2px #DFE3E7;
+
+			/* width */
+			&::-webkit-scrollbar {
+			  width: 5px;
+			}
+
+			/* Track */
+			&::-webkit-scrollbar-track {
+			  background: transparent;
+			}
+
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+			  background: #5A8DEE;
+			  border-radius: 50px;
+			}
+
+			/* Handle on hover */
+			&::-webkit-scrollbar-thumb:hover {
+			  background: #555;
+			}
+		}
+
+		.leaderboard {
+			width: 30px;
+			height: 30px;
+			color: white;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+
+			&.gold {
+				background-color: #FFD700;
+			}
+
+			&.silver {
+				background-color: #C0C0C0;
+			}
+
+			&.bronze {
+				background-color: #CD7F32;
+			}
+		}
+
+		.empty-chart {
+			border: 5px dashed #DFE3E7;
+		}
+	}
+}
